@@ -5,6 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="A simple food delivery ordering demo." />
     <title>Crave | Food delivery</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="module" src="./app.js"></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Crave home"><span class="brand-mark">C</span> crave</a>
+      <div class="delivery-note"><span aria-hidden="true">⌖</span> Delivering to <strong>Campus, Thane</strong></div>
+      <button class="cart-button" id="cart-button" type="button" aria-label="Open cart">
+        <span aria-hidden="true">🛒</span> Cart <span class="cart-count" id="cart-count">0</span>
+      </button>
+    </header>
+
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">GOOD FOOD, GOOD MOOD</p>
+          <h1>Your next<br /><span>great meal</span> is here.</h1>
+          <p class="hero-subtitle">Local favorites, delivered fresh to your door.</p>
+          <a class="primary-link" href="#restaurants">Explore restaurants <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="hero-plate">🍔</div>
+          <span class="floating floating-one">🍟</span>
+          <span class="floating floating-two">🥤</span>
+          <span class="hero-spark">✦</span>
+        </div>
+        <div class="hero-bottom">FRESHLY MADE <span>•</span> LOCALLY LOVED <span>•</span> ALWAYS DELICIOUS</div>
+      </section>
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A simple food delivery ordering demo." />
+    <title>Crave | Food delivery</title>
     <link rel="stylesheet" href="./src/styles.css" />
     <script type="module" src="./src/app.js"></script>
   </head>
