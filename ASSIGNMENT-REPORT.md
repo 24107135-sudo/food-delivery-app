@@ -1,5 +1,27 @@
 # DevOps Assignment: Food Delivery Application
 
+
+**Student:** Shrutika Mane  
+**Roll No.:** 24107135  
+**Email:** 24107135@apsit.edu.in  
+**GitHub username provided:** 24107135-sudogithub  
+**Repository created:** [food-delivery-app](https://github.com/24107135-sudo/food-delivery-app) under the authenticated account.
+
+
+## Application and objective
+
+
+This assignment uses a food delivery application as a common example across Agile planning, source-code management, and CI/CD. The MVP lets customers discover restaurants, browse menus, manage a cart, enter delivery details, and simulate an order confirmation. Checkout is a demonstration only; the app does not collect payment.
+
+
+## Question 1 — Agile user stories and Jira backlog
+
+
+The backlog was prioritized by customer value, dependencies, and effort. Stories follow the “As a … I want … so that …” format. Acceptance criteria are expressed as verifiable outcomes. The first five stories cover the end-to-end MVP ordering journey.
+
+
+The signed-in Jira site already contained a Scrum space named **SHRUTIKA** (project key `SCRUM`), so the backlog was created there rather than changing or renaming the existing space. Jira's available work item types in this space were Epic, Feature, and Task; each user story was therefore created as a **Feature** work item with the story narrative and acceptance criteria in its description.# DevOps Assignment: Food Delivery Application
+
 **Student:** Shrutika Mane  
 **Roll No.:** 24107135  
 **Email:** 24107135@apsit.edu.in  
