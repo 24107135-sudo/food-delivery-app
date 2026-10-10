@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A simple food delivery ordering demo." />
+    <title>Crave | Food delivery</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+    <script type="module" src="./src/app.js"></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Crave home"><span class="brand-mark">C</span> crave</a>
+      <div class="delivery-note"><span aria-hidden="true">⌖</span> Delivering to <strong>Campus, Thane</strong></div>
+      <button class="cart-button" id="cart-button" type="button" aria-label="Open cart">
+        <span aria-hidden="true">🛒</span> Cart <span class="cart-count" id="cart-count">0</span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">GOOD FOOD, GOOD MOOD</p>
+          <h1>Your next<br /><span>great meal</span> is here.</h1>
+          <p class="hero-subtitle">Local favorites, delivered fresh to your door.</p>
+          <a class="primary-link" href="#restaurants">Explore restaurants <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="hero-plate">🍔</div>
+          <span class="floating floating-one">🍟</span>
+          <span class="floating floating-two">🥤</span>
+          <span class="hero-spark">✦</span>
+        </div>
+        <div class="hero-bottom">FRESHLY MADE <span>•</span> LOCALLY LOVED <span>•</span> ALWAYS DELICIOUS</div>
+      </section>
+
+      <section class="restaurants section-wrap" id="restaurants">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">YOUR NEIGHBORHOOD PICKS</p>
+            <h2>Restaurants near you</h2>
+          </div>
+          <label class="search-box">
+            <span aria-hidden="true">⌕</span>
+            <input id="search-input" type="search" placeholder="Search restaurants" aria-label="Search restaurants" />
+          </label>
+        </div>
+        <div class="filters" id="filters" aria-label="Filter by cuisine"></div>
+        <div class="restaurant-grid" id="restaurant-grid" aria-live="polite"></div>
+      </section>
+
+      <section class="order-section section-wrap" id="order-section" hidden>
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">ORDER UPDATES</p>
+            <h2>Your latest order</h2>
+          </div>
+          <span class="status-pill" id="order-status"></span>
+        </div>
+        <p id="order-message" class="order-message"></p>
+      </section>
+    </main>
+
+    <dialog id="menu-dialog" class="app-dialog">
+      <div class="dialog-heading">
+        <div><p class="eyebrow">MADE FRESH FOR YOU</p><h2 id="menu-title"></h2></div>
+        <button class="icon-button" type="button" data-close="menu-dialog" aria-label="Close menu">×</button>
+      </div>
+      <div id="menu-items" class="menu-items"></div>
+    </dialog>
+
+    <dialog id="cart-dialog" class="app-dialog">
+      <div class="dialog-heading">
+        <div><p class="eyebrow">ALMOST THERE</p><h2>Your cart</h2></div>
+        <button class="icon-button" type="button" data-close="cart-dialog" aria-label="Close cart">×</button>
+      </div>
+      <div id="cart-items" class="cart-items"></div>
+      <div class="cart-total"><span>Total</span><strong id="cart-total">₹0</strong></div>
+      <form id="checkout-form" class="checkout-form">
+        <label for="customer-name">Your name</label>
+        <input id="customer-name" name="name" required minlength="2" placeholder="e.g. Shrutika" />
+        <label for="delivery-address">Delivery address</label>
+        <textarea id="delivery-address" name="address" required minlength="8" placeholder="Building, street, area"></textarea>
+        <button class="primary-button" type="submit">Place order <span aria-hidden="true">→</span></button>
+        <p class="form-note">Demo checkout only — no payment is collected.</p>
+        <p class="form-error" id="checkout-error" role="alert"></p>
+      </form>
+    </dialog>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <footer><a class="brand footer-brand" href="#"><span class="brand-mark">C</span> crave</a><span>Made with appetite in Thane.</span></footer>
+  </body>
+</html>
